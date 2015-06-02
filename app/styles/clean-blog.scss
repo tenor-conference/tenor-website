@@ -59,11 +59,13 @@ hr.small {
 // Navigation
 
 .navbar-custom {
+	/*
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 3;
+	*/
 	@include sans-serif();
 	.navbar-brand {
 		font-weight: 800;
@@ -79,7 +81,8 @@ hr.small {
 		}
 	}
 	@media only screen and (min-width: 768px) {
-		background: transparent;
+		background: rgba(25,25,25,0.4);
+    /*background-color:rgba(25,25,25,0.4);*/
 		border-bottom: 1px solid transparent;
 		.navbar-brand {
 			color: white;
