@@ -30,6 +30,5 @@ angular.module('tenorApp')
         $scope.moreOrLess = 'More news &rarr;';
         $scope.showingLess = true;
       }
-      $('body').focus();
     };
   });
