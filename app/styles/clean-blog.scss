@@ -4,7 +4,7 @@
 // Global Components
 
 body {
-  //.serif;
+  @include serif();
 	font-size: 20px;
 	color: $gray-dark;
 }
@@ -25,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-	//.sans-serif;
+	@include sans-serif();
 	font-weight: 800;
 }
 
@@ -64,7 +64,7 @@ hr.small {
 	left: 0;
 	width: 100%;
 	z-index: 3;
-	//.sans-serif;
+	@include sans-serif();
 	.navbar-brand {
 		font-weight: 800;
 	}
@@ -159,7 +159,7 @@ hr.small {
 	background-color: $gray;
 	background: no-repeat center center;
 	background-attachment: scroll;
-	//.background-cover; // MS
+	@include background-cover();
 	// NOTE: Background images are set within the HTML using inline CSS!
 	margin-bottom: 50px;
 	.site-heading,
@@ -182,7 +182,7 @@ hr.small {
 			font-size: 24px;
 			line-height: 1.1;
 			display: block;
-			//.sans-serif;
+			@include sans-serif();
 			font-weight: 300;
 			margin: 10px 0 0;
 		}
@@ -202,13 +202,13 @@ hr.small {
 			display: block;
 		}
 		.subheading {
-			//.sans-serif;
+			@include sans-serif();
 			font-size: 24px;
 			margin: 10px 0 30px;
 			font-weight: 600;
 		}
 		.meta {
-			//.serif;
+			@include serif();
 			font-style: italic;
 			font-weight: 300;
 			font-size: 20px;
@@ -367,7 +367,7 @@ form .row:first-child .floating-label-form-group {
 // Button Styles
 
 .btn {
-	//.sans-serif;
+	@include sans-serif();
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 800;
@@ -399,7 +399,7 @@ form .row:first-child .floating-label-form-group {
 	li {
 		> a,
 		> span {
-			//.sans-serif;
+			@include sans-serif();
 			text-transform: uppercase;
 			font-size: 14px;
 			font-weight: 800;

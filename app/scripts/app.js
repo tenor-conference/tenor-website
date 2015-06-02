@@ -13,17 +13,45 @@ angular
     'ngAnimate',
     'ngCookies',
     'ngResource',
-    'ngRoute',
+    'ui.router',
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+  .config(function ($stateProvider, $urlRouterProvider, dataProvider) {
+    $stateProvider
+      .state('main', {
+        url:'/',
+        views: {
+          header: {
+            templateUrl: 'views/headers/site-heading.html'
+          },
+          content: {
+            templateUrl: 'views/main.html',
+            controller: 'MainCtrl'
+          }
+        }
       })
-      .otherwise({
-        redirectTo: '/'
+      .state('newsitem',{
+        views: {
+          header: {
+            templateUrl: 'views/headers/post-heading.html'
+          },
+          content: {
+            abstract:true,
+            templateUrl: 'views/newsitems/newsitem.html'
+          }
+        }
       });
+
+    $urlRouterProvider.otherwise('/');
+
+    // automatically creates URIs for blog posts
+    for (var i = 0; i < dataProvider.data.news.length; i++) {
+      var item = dataProvider.data.news[i];
+      $stateProvider.state('newsitem.'+item.postlink, {
+        url:'/newsitems/'+item.postlink,
+        templateUrl: 'views/newsitems/'+item.postlink+'.html',
+        controller: item.controller // will be null if not neede
+      });
+    }
   });
