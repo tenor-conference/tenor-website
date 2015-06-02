@@ -22,5 +22,19 @@ angular.module('tenorApp')
       person:'Jean Bresson',
       postlink: 'get-the-idea',
       date:'March 25, 2015'
+    },
+    {
+      big:'One more for testing',
+      small:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada ipsum at pharetra mattis. Nunc vulputate et lectus cursus euismod.',
+      person:'Mike Solomon',
+      postlink: 'one-more',
+      date:'March 1, 2015'
+    },
+    {
+      big:'Last one',
+      small:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada ipsum at pharetra mattis. Nunc vulputate et lectus cursus euismod.',
+      person:'Mike Solomon',
+      postlink: 'last-one',
+      date:'March 1, 2015'
     }
   ]);

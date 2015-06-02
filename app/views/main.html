@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <div ng-repeat="item in newsItems">
+      <div ng-repeat="item in newsItemsFiltered">
         <div class="post-preview">
           <a ng-href="#/newsitems/{{item.postlink}}">
             <h2 class="post-title">
@@ -15,11 +15,13 @@
         </div>
         <hr>
       </div>
+      <div ng-if="newsItems.length > 3">
       <ul class="pager">
         <li class="next">
-          <a href="#">More news &rarr;</a>
+          <a style="cursor:pointer;" ng-bind-html="moreOrLess" ng-click="actOnNews()"></a>
         </li>
       </ul>
+      </div>
     </div>
   </div>
 </div>
