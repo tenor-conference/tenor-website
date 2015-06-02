@@ -31,7 +31,8 @@ h6 {
 
 a {
 	color: $gray-dark;
-	&:hover {
+	&:hover,
+	&:focus {
 		color: $brand-primary;
 	}
 }
@@ -128,7 +129,7 @@ hr.small {
 			.navbar-brand {
 				color: $gray-dark;
 				&:hover,
-        &:focus {
+				&:focus {
 					color: $brand-primary;
 				}
 			}
@@ -136,7 +137,8 @@ hr.small {
 				li {
 					a {
 						color: $gray-dark;
-						&:hover {
+						&:hover,
+						&:focus {
 							color: $brand-primary;
 						}
 					}
@@ -256,7 +258,8 @@ hr.small {
 		> a {
 			text-decoration: none;
 			color: $gray-dark;
-			&:hover {
+			&:hover,
+			&:focus {
 				color: $brand-primary;
 				text-decoration: underline;
 			}
