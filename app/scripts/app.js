@@ -47,8 +47,7 @@ angular
             resolve : {
               headerInfo : function () {
                 return {
-                  big : 'About TENOR',
-                  small : ''
+                  big : 'About TENOR'
                 };
               }
             },
@@ -67,8 +66,7 @@ angular
             resolve : {
               headerInfo : function () {
                 return {
-                  big : 'Conferences',
-                  small : ''
+                  big : 'Conferences'
                 };
               }
             },
@@ -88,8 +86,7 @@ angular
             resolve : {
               headerInfo : function () {
                 return {
-                  big : 'Hosting the conference',
-                  small : ''
+                  big : 'Hosting the conference'
                 };
               }
             },
@@ -108,8 +105,7 @@ angular
             resolve : {
               headerInfo : function () {
                 return {
-                  big : 'Steering Committee',
-                  small : ''
+                  big : 'Steering Committee'
                 };
               }
             },
@@ -129,8 +125,7 @@ angular
             resolve : {
               headerInfo : function () {
                 return {
-                  big : 'Mailing List',
-                  small : ''
+                  big : 'Mailing List'
                 };
               }
             },
