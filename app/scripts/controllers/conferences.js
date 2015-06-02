@@ -15,8 +15,7 @@ angular.module('tenorApp')
         year : '2016',
         tag : 'Cambridge',
         img : 'http://placehold.it/750x150',
-        cwebsite: 'http://tenor2016.tenor-conference.org',
-        pwebsite: 'http://tenor2016.tenor-conference.org'
+        cwebsite: 'http://tenor2016.tenor-conference.org'
       },
       {
         year : '2015',

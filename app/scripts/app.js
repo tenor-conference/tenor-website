@@ -40,6 +40,26 @@ angular
           }
         }
       })
+      .state('about', {
+        url:'/about',
+        views: {
+          header: {
+            resolve : {
+              headerInfo : function () {
+                return {
+                  big : 'About TENOR',
+                  small : ''
+                };
+              }
+            },
+            templateUrl: 'views/headers/site-heading.html',
+            controller:'NormalHeaderCtrl'
+          },
+          content: {
+            templateUrl: 'views/about.html'
+          }
+        }
+      })
       .state('conferences', {
         url:'/conferences',
         views: {
