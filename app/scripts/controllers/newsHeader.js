@@ -9,11 +9,11 @@
  */
 
 angular.module('tenorApp')
-  .controller('NewsHeaderCtrl', function ($scope, $location, data) {
+  .controller('NewsHeaderCtrl', function ($scope, $location, news) {
     var splitloc = $location.path().split('/');
-    for (var i = 0; i < data.news.length; i++) {
-      if (data.news[i].postlink === splitloc[splitloc.length - 1]) {
-        $scope.current = data.news[i];
+    for (var i = 0; i < news.length; i++) {
+      if (news[i].postlink === splitloc[splitloc.length - 1]) {
+        $scope.current = news[i];
       }
     }
     $scope.testHolder = true;

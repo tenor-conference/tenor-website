@@ -1,8 +1,7 @@
 'use strict';
 
 angular.module('tenorApp')
-  .provider('data', [function () {
-    var people = {
+  .constant('people', {
       'TENOR official' : {
         website: 'http://www.tenor-conference.org'
       },
@@ -42,42 +41,4 @@ angular.module('tenorApp')
         img : 'http://www.placehold.it/200x200',
         blurb : 'Mike Solomon can build a snowman out of rain.'
       }
-    };
-    for (var n in people) {
-      people[n].name = n;
-    }
-
-    var news = [
-      {
-        big:'Please fill me in',
-        small:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elit mauris, lobortis convallis consequat ut, sodales quis orci.',
-        person: people['TENOR official'],
-        postlink: 'please-fill-me-in',
-        date:'May 24, 2015'
-      },
-      {
-        big:'Here\'s some more news',
-        small:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar scelerisque orci, accumsan auctor elit sollicitudin et.',
-        person:people['Dominique Fober'],
-        postlink: 'more-info',
-        date:'April 25, 2015'
-      },
-      {
-        big:'You get the idea',
-        small:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada ipsum at pharetra mattis. Nunc vulputate et lectus cursus euismod.',
-        person:people['Jean Bresson'],
-        postlink: 'get-the-idea',
-        date:'March 25, 2015'
-      }
-    ];
-
-    this.data = {};
-    this.data.news = news;
-    this.data.people = people;
-    var data = this.data;
-
-    this.$get = function() {
-      return data;
-    };
-
-  }]);
+    });

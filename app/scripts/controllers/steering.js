@@ -9,11 +9,11 @@
  */
 
 angular.module('tenorApp')
-  .controller('SteeringCtrl', function ($scope, data) {
+  .controller('SteeringCtrl', function ($scope, people) {
     $scope.people = [];
-    for (var person in data.people) {
-      if (data.people[person].steering) {
-        $scope.people.push(data.people[person]);
+    for (var person in people) {
+      if (people[person].steering) {
+        $scope.people.push(people[person]);
       }
     }
   });

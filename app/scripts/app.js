@@ -17,7 +17,7 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($stateProvider, $urlRouterProvider, dataProvider) {
+  .config(function ($stateProvider, $urlRouterProvider, news) {
     $stateProvider
       .state('main', {
         url:'/',
@@ -153,9 +153,10 @@ angular
 
     $urlRouterProvider.otherwise('/');
 
+
     // automatically creates URIs for blog posts
-    for (var i = 0; i < dataProvider.data.news.length; i++) {
-      var item = dataProvider.data.news[i];
+    for (var i = 0; i < news.length; i++) {
+      var item = news[i];
       $stateProvider.state('newsitem.'+item.postlink, {
         url:'/newsitems/'+item.postlink,
         templateUrl: 'views/newsitems/'+item.postlink+'.html',
