@@ -34,7 +34,8 @@ angular
       .state('newsitem',{
         views: {
           header: {
-            templateUrl: 'views/headers/post-heading.html'
+            templateUrl: 'views/headers/post-heading.html',
+            controller: 'NewsHeaderCtrl'
           },
           content: {
             abstract:true,
