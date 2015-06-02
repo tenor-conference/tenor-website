@@ -235,8 +235,7 @@ hr.small {
 .post-preview {
 	> a {
 		color: $gray-dark;
-		&:hover,
-		&:focus {
+		&:hover {
 			text-decoration: none;
 			color: $brand-primary;
 		}
