@@ -1,0 +1,9 @@
+<div ng-repeat="conference in conferences">
+  <h1>{{conference.year}}</h1>
+  <h2>{{conference.tag}}</h2>
+  <img class="img-responsive" ng-src="{{conference.img}}" />
+  <div class="row">
+    <div class="col-md-6 col-sm-6"><a ng-href="{{conference.cwebsite}}">website</a></div>
+    <div class="col-md-6 col-sm-6"><a ng-href="{{conference.pwebsite}}">proceedings</a></div>
+  </div>
+</div>

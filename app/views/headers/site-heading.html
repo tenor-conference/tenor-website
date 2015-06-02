@@ -1,7 +1,9 @@
 <div class="site-heading">
-  <h1>TENOR</h1>
-  <hr class="small">
+  <h1>{{current.big}}</h1>
+  <div ng-if="current.small !== ''">
+    <hr class="small">
               <span class="subheading">
-                <b>International Conference on Technologies for Music Notation and Representation</b>
+                <b>{{current.small}}</b>
               </span>
+  </div>
 </div>

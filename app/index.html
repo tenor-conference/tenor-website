@@ -44,19 +44,16 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a href="index.html">Past TENORs</a>
+          <a href="#/conferences">Conferences</a>
         </li>
         <li>
-          <a href="about.html">Proceedings</a>
+          <a ng-href="#/hosting">Hosting TENOR</a>
         </li>
         <li>
-          <a href="post.html">Hosting</a>
+          <a href="#/steering">Steering Committee</a>
         </li>
         <li>
-          <a href="contact.html">Steering Committee</a>
-        </li>
-        <li>
-          <a href="contact.html">Mailing List</a>
+          <a href="#/mailing">Mailing List</a>
         </li>
       </ul>
     </div>
@@ -79,9 +76,13 @@
 
 <!-- Main Content -->
 
-
-<div ui-view="content"></div>
-
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div ui-view="content"></div>
+    </div>
+  </div>
+</div>
 
 <hr>
 
@@ -151,7 +152,11 @@
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/steering.js"></script>
+<script src="scripts/controllers/conferences.js"></script>
+<script src="scripts/controllers/normalHeader.js"></script>
 <script src="scripts/controllers/newsHeader.js"></script>
+<script src="scripts/directives/backImg.js"></script>
 <script src="scripts/providers/data.js"></script>
 <!-- endbuild -->
 </body>

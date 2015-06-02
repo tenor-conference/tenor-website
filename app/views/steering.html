@@ -1,0 +1,11 @@
+<div ng-repeat="person in people">
+  <div class="row">
+    <div class="col-md-4 col-sm-4" style="padding:10px;">
+      <img style="margin-left:auto;margin-right:auto;display:block;" class="img-responsive" ng-src="{{person.img}}" />
+    </div>
+    <div class="col-md-8 col-sm-8" style="padding:10px;">
+      <p ng-bind-html="person.blurb"></p>
+      <a ng-href="{{person.website}}">website</a>
+    </div>
+  </div>
+</div>

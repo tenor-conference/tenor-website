@@ -23,11 +23,103 @@ angular
         url:'/',
         views: {
           header: {
-            templateUrl: 'views/headers/site-heading.html'
+            resolve : {
+              headerInfo : function () {
+                return {
+                  big : 'TENOR',
+                  small : 'International Conference on Technologies for Music Notation and Representation'
+                };
+              }
+            },
+            templateUrl: 'views/headers/site-heading.html',
+            controller:'NormalHeaderCtrl'
           },
           content: {
             templateUrl: 'views/main.html',
             controller: 'MainCtrl'
+          }
+        }
+      })
+      .state('conferences', {
+        url:'/conferences',
+        views: {
+          header: {
+            resolve : {
+              headerInfo : function () {
+                return {
+                  big : 'Conferences',
+                  small : ''
+                };
+              }
+            },
+            templateUrl: 'views/headers/site-heading.html',
+            controller:'NormalHeaderCtrl'
+          },
+          content: {
+            templateUrl: '../views/conferences.html',
+            controller: 'ConferencesCtrl'
+          }
+        }
+      })
+      .state('hosting', {
+        url:'/hosting',
+        views: {
+          header: {
+            resolve : {
+              headerInfo : function () {
+                return {
+                  big : 'Hosting the conference',
+                  small : ''
+                };
+              }
+            },
+            templateUrl: 'views/headers/site-heading.html',
+            controller:'NormalHeaderCtrl'
+          },
+          content: {
+            templateUrl: 'views/hosting.html'
+          }
+        }
+      })
+      .state('steering', {
+        url:'/steering',
+        views: {
+          header: {
+            resolve : {
+              headerInfo : function () {
+                return {
+                  big : 'Steering Committee',
+                  small : ''
+                };
+              }
+            },
+            templateUrl: 'views/headers/site-heading.html',
+            controller:'NormalHeaderCtrl'
+          },
+          content: {
+            templateUrl: '../views/steering.html',
+            controller: 'SteeringCtrl'
+          }
+        }
+      })
+      .state('mailing', {
+        url:'/mailing',
+        views: {
+          header: {
+            resolve : {
+              headerInfo : function () {
+                return {
+                  big : 'Mailing List',
+                  small : ''
+                };
+              }
+            },
+            templateUrl: 'views/headers/site-heading.html',
+            controller:'NormalHeaderCtrl'
+          },
+          content: {
+            templateUrl: '../views/mailing.html',
+            controller: 'SteeringCtrl'
           }
         }
       })
