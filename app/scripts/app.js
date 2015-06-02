@@ -56,7 +56,7 @@ angular
             controller:'NormalHeaderCtrl'
           },
           content: {
-            templateUrl: '../views/conferences.html',
+            templateUrl: 'views/conferences.html',
             controller: 'ConferencesCtrl'
           }
         }
@@ -97,7 +97,7 @@ angular
             controller:'NormalHeaderCtrl'
           },
           content: {
-            templateUrl: '../views/steering.html',
+            templateUrl: 'views/steering.html',
             controller: 'SteeringCtrl'
           }
         }
@@ -118,7 +118,7 @@ angular
             controller:'NormalHeaderCtrl'
           },
           content: {
-            templateUrl: '../views/mailing.html',
+            templateUrl: 'views/mailing.html',
             controller: 'SteeringCtrl'
           }
         }
