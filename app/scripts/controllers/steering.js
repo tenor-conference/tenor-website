@@ -9,11 +9,13 @@
  */
 
 angular.module('tenorApp')
-  .controller('SteeringCtrl', function ($scope, people) {
+  .controller('SteeringCtrl', function ($scope, people, imageURLs) {
     $scope.people = [];
     for (var person in people) {
       if (people[person].steering) {
-        $scope.people.push(people[person]);
+        var entry = JSON.parse( JSON.stringify( people[person] ) );
+        entry.img = imageURLs[person];
+        $scope.people.push(entry);
       }
     }
   });

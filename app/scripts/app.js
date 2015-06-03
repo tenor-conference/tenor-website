@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ui.router',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'angular-preload-image'
   ])
   .config(function ($stateProvider, $urlRouterProvider, news) {
     $stateProvider
@@ -163,4 +164,7 @@ angular
         controller: item.controller // will be null if not neede
       });
     }
+  })
+  .run(function (preLoader) {
+
   });

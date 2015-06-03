@@ -9,18 +9,18 @@
  */
 
 angular.module('tenorApp')
-  .controller('ConferencesCtrl', function ($scope) {
+  .controller('ConferencesCtrl', function ($scope, imageURLs) {
     $scope.conferences = [
       {
         year : '2016',
         tag : 'Cambridge',
-        img : 'http://placehold.it/750x150',
+        img : imageURLs['Cambridge'],
         cwebsite: 'http://tenor2016.tenor-conference.org'
       },
       {
         year : '2015',
         tag : 'Paris',
-        img : 'http://placehold.it/750x150',
+        img : imageURLs['Paris'],
         cwebsite:'http://tenor2015.tenor-conference.org',
         pwebsite:'http://tenor2015.tenor-conference.org'
       }
