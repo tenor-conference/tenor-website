@@ -351,23 +351,23 @@ module.exports = function (grunt) {
       }
     },
 
-    htmlmin: {
-      dist: {
-        options: {
-          collapseWhitespace: true,
-          conservativeCollapse: true,
-          collapseBooleanAttributes: true,
-          removeCommentsFromCDATA: true,
-          removeOptionalTags: true
-        },
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.dist %>',
-          src: ['*.html', 'views/{,*/}*.html'],
-          dest: '<%= yeoman.dist %>'
-        }]
-      }
-    },
+    //htmlmin: {
+    //  dist: {
+    //    options: {
+    //      collapseWhitespace: true,
+    //      conservativeCollapse: true,
+    //      collapseBooleanAttributes: true,
+    //      removeCommentsFromCDATA: true,
+    //      removeOptionalTags: true
+    //    },
+    //    files: [{
+    //      expand: true,
+    //      cwd: '<%= yeoman.dist %>',
+    //      src: ['*.html', 'views/{,*/}*.html'],
+    //      dest: '<%= yeoman.dist %>'
+    //    }]
+    //  }
+    //},
 
     // ng-annotate tries to make the code safe for minification automatically
     // by using the Angular long form for dependency injection.
@@ -401,7 +401,7 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
-            'views/{,*/}*.html',
+            //'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
             'styles/fonts/{,*/}*.*'
           ]
@@ -456,9 +456,10 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
-      'ngtemplates',
       'clean:server',
       'wiredep',
+      'useminPrepare',
+      'ngtemplates',
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
@@ -494,8 +495,8 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'filerev',
-    'usemin',
-    'htmlmin'
+    'usemin'//,
+    //'htmlmin'
   ]);
 
   grunt.registerTask('publish', [
