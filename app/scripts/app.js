@@ -15,6 +15,7 @@ angular
     'ngResource',
     'ui.router',
     'ngSanitize',
+    'angular-preload-image',
     'ngTouch'
   ])
   .config(function ($stateProvider, $urlRouterProvider, news) {
