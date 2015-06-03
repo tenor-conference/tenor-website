@@ -328,6 +328,18 @@ module.exports = function (grunt) {
       }
     },
 
+    ngtemplates: {
+      dist: {
+        options: {
+          module: 'tenorApp',
+          usemin: 'scripts/scripts.js'
+        },
+        cwd: '<%= yeoman.app %>',
+        src: 'views/**/*.html',
+        dest: '<%= yeoman.app %>/scripts/templates.js'
+      }
+    },
+
     svgmin: {
       dist: {
         files: [{
@@ -471,6 +483,7 @@ module.exports = function (grunt) {
     'clean:dist',
     'wiredep',
     'useminPrepare',
+    'ngtemplates',
     'concurrent:dist',
     'autoprefixer',
     'concat',
@@ -485,7 +498,6 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('publish', [
-    'newer:jshint',
     'test',
     'build',
     'buildcontrol'
