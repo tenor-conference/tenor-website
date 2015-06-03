@@ -456,6 +456,7 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
+      'ngtemplates',
       'clean:server',
       'wiredep',
       'concurrent:server',
