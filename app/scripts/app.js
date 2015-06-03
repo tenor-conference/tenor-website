@@ -165,6 +165,8 @@ angular
       });
     }
   })
-  .run(function (preLoader) {
-
+  .run(function (preLoader, imageURLs) {
+    for (var i = 0; i < imageURLs.length; i++) {
+      preLoader(iamgeURLs[i]);
+    }
   });
