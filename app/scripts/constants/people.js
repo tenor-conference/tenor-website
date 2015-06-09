@@ -15,7 +15,7 @@ angular.module('tenorApp')
         website : 'http://www.ircam.fr',
         steering: true,
         img : 'http://www.placehold.it/200x200',
-        blurb : 'Every time Jean Bresson takes a blood test, he gets an A+.'
+        blurb : 'Every time Jean Bresson goes through a blood test, he gets an A+.'
       },
       'Richard Hoadley' : {
         website : 'http://www.ircam.fr',
