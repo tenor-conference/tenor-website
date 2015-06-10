@@ -1,3 +1,4 @@
+<!--
 <div ng-repeat="person in people">
   <div class="row">
     <div class="col-md-4 col-sm-4" style="padding:10px;">
@@ -9,3 +10,16 @@
     </div>
   </div>
 </div>
+-->
+<p>
+The Steering Committee is responsible for guiding future directions with
+regards to the TENOR conference. Its members currently include:
+</p>
+<ul>
+  <li ng-repeat="person in people">
+    {{person.name}}: {{person.affiliation}}
+  </li>
+</ul>
+
+<!--To contact the steering committee, direct your request to ... (à venir)-->
+

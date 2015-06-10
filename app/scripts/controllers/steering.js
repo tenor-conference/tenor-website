@@ -13,7 +13,9 @@ angular.module('tenorApp')
     $scope.people = [];
     for (var person in people) {
       if (people[person].steering) {
-        $scope.people.push(people[person]);
+        var toPush = JSON.parse( JSON.stringify( people[person] ) );
+        toPush.name = person;
+        $scope.people.push(toPush);
       }
     }
   });
