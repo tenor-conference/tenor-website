@@ -87,7 +87,7 @@ angular
             resolve : {
               headerInfo : function () {
                 return {
-                  big : 'Hosting the Conference'
+                  big : 'Hosting TENOR'
                 };
               }
             },
