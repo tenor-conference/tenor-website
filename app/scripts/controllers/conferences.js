@@ -13,16 +13,17 @@ angular.module('tenorApp')
     $scope.conferences = [
       {
         year : '2016',
-        tag : 'Cambridge',
+        tag : 'Anglia Ruskin University, Cambridge, UK',
         img : 'http://placehold.it/750x150',
         cwebsite: 'http://tenor2016.tenor-conference.org'
       },
       {
         year : '2015',
-        tag : 'Paris',
+        tag : 'Université Paris-Sorbonne, IRCAM, Paris, France',
         img : 'http://placehold.it/750x150',
+        date : 'May 28-30',
         cwebsite:'http://tenor2015.tenor-conference.org',
-        pwebsite:'http://tenor2015.tenor-conference.org'
+        pwebsite:'http://tenor2015.tenor-conference.org/TENOR2015-Proceedings.pdf'
       }
     ];
   });
