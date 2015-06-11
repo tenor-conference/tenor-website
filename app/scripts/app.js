@@ -80,6 +80,25 @@ angular
           }
         }
       })
+      .state('proceedings', {
+        url:'/proceedings',
+        views: {
+          header: {
+            resolve : {
+              headerInfo : function () {
+                return {
+                  big : 'Proceedings'
+                };
+              }
+            },
+            templateUrl: 'views/headers/site-heading.html',
+            controller:'NormalHeaderCtrl'
+          },
+          content: {
+            templateUrl: 'views/proceedings.html'
+          }
+        }
+      })
       .state('hosting', {
         url:'/hosting',
         views: {
