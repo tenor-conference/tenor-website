@@ -23,7 +23,8 @@ angular.module('tenorApp')
         img : 'http://placehold.it/750x150',
         date : 'May 28-30',
         cwebsite:'http://tenor2015.tenor-conference.org',
-        pwebsite:'http://tenor2015.tenor-conference.org/TENOR2015-Proceedings.pdf'
+        pwebsite:'http://tenor2015.tenor-conference.org/TENOR2015-Proceedings.pdf',
+        bibtex:'bibtex2015.bib'
       }
     ];
   });
