@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 angular.module('tenorApp')
   .constant('papers2015', [

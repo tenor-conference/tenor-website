@@ -95,7 +95,8 @@ angular
             controller:'NormalHeaderCtrl'
           },
           content: {
-            templateUrl: 'views/proceedings.html'
+            templateUrl: 'views/proceedings.html',
+            controller: 'ProceedingsCtrl'
           }
         }
       })

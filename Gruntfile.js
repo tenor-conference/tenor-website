@@ -257,6 +257,7 @@ module.exports = function (grunt) {
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
           '<%= yeoman.dist %>/styles/{,*/}*.css',
           '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+          '<%= yeoman.dist %>/proceedings/{,*/}*.{pdf,bib}',
           '<%= yeoman.dist %>/styles/fonts/*'
         ]
       }
@@ -289,6 +290,7 @@ module.exports = function (grunt) {
         assetsDirs: [
           '<%= yeoman.dist %>',
           '<%= yeoman.dist %>/images',
+          '<%= yeoman.dist %>/proceedings',
           '<%= yeoman.dist %>/styles'
         ]
       }
@@ -405,6 +407,7 @@ module.exports = function (grunt) {
             '.htaccess',
             '*.html',
             //'views/{,*/}*.html',
+            'proceedings/{,*/}*.{pdf,bib}',
             'images/{,*/}*.{webp}',
             'styles/fonts/{,*/}*.*'
           ]
