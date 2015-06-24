@@ -9,3 +9,63 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   color: #000;
   padding: 0.2em 0;
 }
+
+.papers {
+	line-height: 1.1em;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.papers a a:hover {
+	cursor: auto;
+	color: #88F;
+	text-decoration: none;
+}
+
+.papers li {
+	padding-top: 8px;
+}
+
+.papers img {
+	float:right; 
+	padding-left: 10px;
+	padding-right: 5px;
+}
+
+.abstractlink {
+	font-size: 80%;
+	color: #88F;
+	cursor:pointer;
+}
+
+.abstract {
+	display: none;
+	font-size: 85%;
+	color: #555;
+	background: #eef;
+}
+
+.bibtex {
+	display: none;
+	font-family: courier;
+	font-size: 9pt;
+	color: #555;
+	background: #eee;
+}
+
+.bibtexlink {
+	float:right; 
+	padding-left: 10px;
+}
+
+.papertitle {
+	color: #000;
+}
+
+.paperauth {
+	font-style: italic;
+	font-size: 90%;
+	color: #777;
+}
