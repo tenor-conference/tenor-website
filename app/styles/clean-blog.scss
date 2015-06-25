@@ -163,6 +163,7 @@ hr.small {
 	background: no-repeat center center;
 	background-attachment: scroll;
 	@include background-cover();
+  min-height:270px;
 	// NOTE: Background images are set within the HTML using inline CSS!
 	margin-bottom: 50px;
 	.site-heading,
@@ -170,10 +171,13 @@ hr.small {
 	.page-heading {
 		padding: 100px 0 50px;
 		color: white;
-		@media only screen and (min-width: 768px) {
+		@media only screen and (min-width: $screen-break-threshold) {
 			padding: 150px 0;
 		}
 	}
+  @media (min-width: $screen-break-threshold) {
+    min-height:486px;
+  }
 	.site-heading,
 	.page-heading {
 		text-align: center;
@@ -189,7 +193,7 @@ hr.small {
 			font-weight: 300;
 			margin: 10px 0 0;
 		}
-		@media only screen and (min-width: 768px) {
+		@media only screen and (min-width: $screen-break-threshold) {
 			h1 {
 				font-size: 80px;
 			}
@@ -219,7 +223,7 @@ hr.small {
 				color: white;
 			}
 		}
-		@media only screen and (min-width: 768px) {
+		@media only screen and (min-width: $screen-break-threshold) {
 			h1 {
 				font-size: 55px;
 			}
@@ -266,7 +270,7 @@ hr.small {
 			}
 		}
 	}
-	@media only screen and (min-width: 768px) {
+	@media only screen and (min-width: $screen-break-threshold) {
 		> a {
 			> .post-title {
 				font-size: 36px;
