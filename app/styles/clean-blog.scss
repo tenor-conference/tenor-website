@@ -80,7 +80,7 @@ hr.small {
 			}
 		}
 	}
-	@media only screen and (min-width: 768px) {
+	@media only screen and (min-width: $grid-float-breakpoint) {
 		background: rgba(25,25,25,0.4);
     /*background-color:rgba(25,25,25,0.4);*/
 		border-bottom: 1px solid transparent;
