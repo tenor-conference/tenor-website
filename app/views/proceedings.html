@@ -6,29 +6,29 @@
       <div class=papertitle>{{paper.title}}</div>
       <div class="paperauth">{{paper.auth}}</div>
       <div class="abstractlink">
-        <a ng-click="toAbstract($index)">Abstract</a>
+        <a ng-click="toAbstract($index)">Abstract</a> &nbsp;&nbsp;
         <a ng-click="toBibtex($index)">Bibtex</a>
       </div>
 
       <div ng-show="showing[$index] === 'ABSTRACT'" class="abstract">
-        <p>{{paper.abstract}}</p>
+        {{paper.abstract}}
       </div>
 
-      <div ng-show="showing[$index] === 'BIBTEX'" class="bibtex">
-        <p>
-          @inproceedings{ {{paper.first}}_tenor2015, <br />
-          &nbsp;&nbsp;&nbsp;   Address = {Paris, France}, <br />
-          &nbsp;&nbsp;&nbsp;   Author = { {{paper.auth}} }, <br />
-          &nbsp;&nbsp;&nbsp;   Title = { {{paper.title}} }, <br />
-          &nbsp;&nbsp;&nbsp;   Booktitle = {Proceedings of the First International Conference on Technologies for Music Notation and Representation - TENOR2015}, <br />
-          &nbsp;&nbsp;&nbsp;   Pages = { {{paper.pages}} }, <br />
-          &nbsp;&nbsp;&nbsp;   Year = {2015}, <br />
-          &nbsp;&nbsp;&nbsp;   Editor = {Marc Battier and Jean Bresson and Pierre Couprie and Cécile Davy-Rigaux and Dominique Fober and Yann Geslin and Hugues Genevois and François Picard and Alice Tacaille}, <br />
-          &nbsp;&nbsp;&nbsp;   Publisher = {Institut de Recherche en Musicologie}, <br />
-          &nbsp;&nbsp;&nbsp;   ISBN = {978-2-9552905-0-7} <br />
+      <div ng-show="showing[$index] === 'BIBTEX'" class="abstract">
+          @inproceedings{ {{paper.first}}_tenor2015,
+       <div class="indent">
+         Address = {Paris, France}, <br />
+         Author = { {{paper.auth}} }, <br />
+         Title = { {{paper.title}} }, <br />
+         Booktitle = {Proceedings of the First International Conference on Technologies for Music Notation and Representation - TENOR2015}, <br />
+         Pages = { {{paper.pages}} }, <br />
+         Year = {2015}, <br />
+         Editor = {Marc Battier and Jean Bresson and Pierre Couprie and Cécile Davy-Rigaux and Dominique Fober and Yann Geslin and Hugues Genevois and François Picard and Alice Tacaille}, <br />
+         Publisher = {Institut de Recherche en Musicologie}, <br />
+         ISBN = {978-2-9552905-0-7}
+       </div>
           }
-        </p>
-      </div>
+       </div>
     </li>
   </ul>
 </div>

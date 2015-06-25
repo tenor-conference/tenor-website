@@ -30,11 +30,12 @@ h6 {
 }
 
 a {
-	color: $gray-dark;
+	color: $link-color;
 	text-decoration: none;
 	&:hover,
 	&:focus {
-		color: $brand-primary;
+		color: $link-over;
+    text-decoration: none;
 	}
 }
 
@@ -81,7 +82,7 @@ hr.small {
 		}
 	}
 	@media only screen and (min-width: $grid-float-breakpoint) {
-		background: rgba(25,25,25,0.4);
+		background: rgba(100,100,140,0.5);
     /*background-color:rgba(25,25,25,0.4);*/
 		border-bottom: 1px solid transparent;
 		.navbar-brand {
@@ -165,7 +166,7 @@ hr.small {
 	@include background-cover();
   min-height:270px;
 	// NOTE: Background images are set within the HTML using inline CSS!
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	.site-heading,
 	.post-heading,
 	.page-heading {
@@ -176,14 +177,14 @@ hr.small {
 		}
 	}
   @media (min-width: $screen-break-threshold) {
-    min-height:486px;
+    height: 330px;
   }
 	.site-heading,
 	.page-heading {
 		text-align: center;
 		h1 {
-			margin-top: 0;
-			font-size: 50px;
+ 			margin-top: 0;
+			font-size: 60px;
 		}
 		.subheading {
 			font-size: 24px;
@@ -195,7 +196,7 @@ hr.small {
 		}
 		@media only screen and (min-width: $screen-break-threshold) {
 			h1 {
-				font-size: 80px;
+				font-size: 60px;
 			}
 		}
 	}
@@ -225,10 +226,10 @@ hr.small {
 		}
 		@media only screen and (min-width: $screen-break-threshold) {
 			h1 {
-				font-size: 55px;
+				font-size: 45px;
 			}
 			.subheading {
-				font-size: 30px;
+				font-size: 25px;
 			}
 		}
 	}

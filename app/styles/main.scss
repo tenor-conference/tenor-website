@@ -36,22 +36,22 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 
 .abstractlink {
-	font-size: 80%;
+	font-size: 75%;
 	color: #88F;
 	cursor:pointer;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .abstract {
-	font-size: 85%;
-	color: #555;
-	background: #eef;
+  padding: 6px 10px 6px 10px;
+  font-size: 9pt;
+	background: #eee;
+  .indent {
+    padding-left: 30px;
+  }
 }
 
-.bibtex {
-	font-size: 9pt;
-	/*color: #555;*/
-	background: #eee;
-}
 
 .papertitle {
 	color: #000;
