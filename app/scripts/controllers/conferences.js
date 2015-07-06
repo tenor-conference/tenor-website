@@ -15,7 +15,7 @@ angular.module('tenorApp')
         year : '2016',
         tag : 'Anglia Ruskin University, Cambridge, UK',
         img : 'http://placehold.it/750x150',
-        cwebsite: 'http://tenor2016.tenor-conference.org'
+        date : 'May 27-29'
       },
       {
         year : '2015',
