@@ -292,6 +292,7 @@ module.exports = function (grunt) {
           '<%= yeoman.dist %>',
           '<%= yeoman.dist %>/images',
           '<%= yeoman.dist %>/proceedings',
+          '<%= yeoman.dist %>/rsrc',
           '<%= yeoman.dist %>/styles'
         ]
       }
@@ -409,6 +410,7 @@ module.exports = function (grunt) {
             '*.html',
             //'views/{,*/}*.html',
             'proceedings/{,*/}*.{pdf,bib}',
+            'rsrc/{,*/}*.{zip,tgz}',
             'images/{,*/}*.{webp}',
             'styles/fonts/{,*/}*.*'
           ]
