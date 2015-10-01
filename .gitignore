@@ -3,3 +3,6 @@ dist/
 node_modules/
 bower_components/
 .*
+app/styles/*.css
+app/scripts/templates.js
+app/styles/*.map
