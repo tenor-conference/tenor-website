@@ -4,6 +4,27 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+@keyframes right-left {
+  0% {left: 115%;}
+  50% {left:-15%;}
+  100% {left: 115%;}
+}
+
+@keyframes left-right {
+  0% {left: -15%;}
+  50% {left: 115%;}
+  100% {left: -15%;}
+}
+
+.anim-test {
+  text-align: center;
+  position: absolute;
+  opacity: 0.6;
+  background-color: darkgray;
+  width: 10%;
+  padding: 10px;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -61,4 +82,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 	font-style: italic;
 	font-size: 90%;
 	color: #777;
+}
+
+body {
+  overflow-x: hidden;
 }
