@@ -174,14 +174,17 @@ angular
 
     $urlRouterProvider.otherwise('/');
 
-
+    var addedItems = [];
     // automatically creates URIs for blog posts
     for (var i = 0; i < news.length; i++) {
       var item = news[i];
-      $stateProvider.state('newsitem.'+item.postlink, {
-        url:'/newsitems/'+item.postlink,
-        templateUrl: 'views/newsitems/'+item.postlink+'.html',
-        controller: item.controller // will be null if not neede
-      });
+      if (addedItems.indexOf(item.postlink) === -1) {
+        $stateProvider.state('newsitem.' + item.postlink, {
+          url: '/newsitems/' + item.postlink,
+          templateUrl: 'views/newsitems/' + item.postlink + '.html',
+          controller: item.controller // will be null if not neede
+        });
+      }
+      addedItems.push(item.postlink);
     }
   });
