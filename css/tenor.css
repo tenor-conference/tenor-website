@@ -1,0 +1,61 @@
+
+.tenor-conf {
+	padding-top: 3mm;
+	padding-bottom: 3mm;
+}
+
+.tenor-year {
+	color: #0000cc;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+.tenor-place {
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.tenor-bibtex {
+	font-size: 90%;
+	font-weight: normal;
+}
+
+.tenor-background-light { background: #f5f5f5; }
+
+.tenor-paper { 
+	margin: 0px 10px 20px 10px; /*padding: 0px 10px 0px 10px;*/
+}
+
+.proc-altern {
+	background: #eee;
+}
+
+.proc-title {
+	font-weight: bold;
+}
+.proc-auth {
+	font-size: 95%; 
+	font-style: italic;
+	color: #999;
+}
+.proc-pdf {	float: right; }
+.proc-button { 
+	cursor: pointer;
+	font-size: 90%; 
+	color: #bbf;
+}
+.proc-button:hover { color: darken(#bbf, 40%);	}
+.proc-abstract { 
+	margin: 5px 40px 0px 20px;
+	padding: 5px;
+	text-align: justify;
+	font-size: 85%; 
+	color: #ababab;
+	background: #fbfbe9;
+}
+.proc-bibtex { 	
+	margin: 5px 40px 0px 20px;
+	font-size: 75%; 
+	color: #aaa;
+	background: #fafafa;
+}
