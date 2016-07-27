@@ -128,20 +128,20 @@ aside {
         }
     }
     @media (min-width: 768px) {
-        background-color: transparent;
+        background-color: @gray-darker; /* #4d0026; */
         border-color: fade(white, 30%);
         .navbar-header .navbar-brand {
-            color: fade(white, 70%);
+            color: @navbar-color;
             &:hover,
             &:focus {
-                color: white;
+                color: darken(@navbar-color, 20%);
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: fade(white, 70%);
+            color: @navbar-color; /*fade(@theme-primary, 70%);*/
             &:hover {
-                color: white;
+                color: darken(@navbar-color, 20%);
             }
         }
         &.affix {
@@ -174,9 +174,9 @@ header {
     min-height: auto;
     .background-cover;
     background-position: center;
-    background-image: url('../img/header.png');
+    background-image: url('../img/doretdespace.png');
     text-align: center;
-    color: @theme-primary;
+    color: white;
     .header-content {
         position: relative;
         text-align: center;
