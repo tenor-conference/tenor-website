@@ -15,6 +15,11 @@
 	font-weight: bold;
 }
 
+.tenor-note {
+	font-size: 85%;
+	font-weight: normal;
+}
+
 .tenor-bibtex {
 	font-size: 90%;
 	font-weight: normal;
@@ -22,7 +27,7 @@
 
 .tenor-background-light { background: #f5f5f5; }
 
-.tenor-paper { 
+.tenor-paper {
 	margin: 0px 10px 20px 10px; /*padding: 0px 10px 0px 10px;*/
 }
 
@@ -34,28 +39,28 @@
 	font-weight: bold;
 }
 .proc-auth {
-	font-size: 95%; 
+	font-size: 95%;
 	font-style: italic;
 	color: #999;
 }
 .proc-pdf {	float: right; }
-.proc-button { 
+.proc-button {
 	cursor: pointer;
-	font-size: 90%; 
+	font-size: 90%;
 	color: #bbf;
 }
 .proc-button:hover { color: darken(#bbf, 40%);	}
-.proc-abstract { 
+.proc-abstract {
 	margin: 5px 40px 0px 20px;
 	padding: 5px;
 	text-align: justify;
-	font-size: 85%; 
+	font-size: 85%;
 	color: #ababab;
 	background: #fbfbe9;
 }
-.proc-bibtex { 	
+.proc-bibtex {
 	margin: 5px 40px 0px 20px;
-	font-size: 75%; 
+	font-size: 75%;
 	color: #aaa;
 	background: #fafafa;
 }
