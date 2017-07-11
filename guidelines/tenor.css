@@ -9,17 +9,28 @@ body {
 }
 
 #global {
-    margin: 30px;
-    padding: 50px 50px 50px 50px;
-/*    width : 700px; */
+  margin: 5px;
+  padding: 15px;
 	background-color: #ffffff;
 	border-style: outset;
 }
 
-h1	{ font-size : 31pt; font-weight : normal; padding: 0; line-height: 1.0;
-	  color:#777777; } 
-h2	{ color:#777777; font-size : 18pt; font-weight : bold; }
-h3	{ color:#777777; font-size : 14pt; font-weight : bold; }
+
+h1	{ font-size : 18pt; font-weight : normal; padding: 0; line-height: 1.0;
+	  color:#777777; }
+h2	{ color:#777777; font-size : 14pt; font-weight : bold; }
+h3	{ color:#777777; font-size : 12pt; font-weight : bold; }
+
+@media (min-width: 700px) {
+  #global {
+    margin: 30px;
+    padding: 50px;
+  }
+  h1	{ font-size : 31pt; font-weight : normal; padding: 0; line-height: 1.0;
+      color:#777777; }
+  h2	{ color:#777777; font-size : 18pt; font-weight : bold; }
+  h3	{ color:#777777; font-size : 14pt; font-weight : bold; }
+}
 
 table { border-style:none; cell-spacing:0; cell-padding:0; }
 
