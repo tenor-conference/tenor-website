@@ -5,7 +5,7 @@
 #  A guide for organizing TENOR
 #### International Conference on Technologies for Music Notation and Representation
 
-Draft document - Last updated 08/2021
+Draft document - Last updated July 2021
 
 
 ## Presentation
