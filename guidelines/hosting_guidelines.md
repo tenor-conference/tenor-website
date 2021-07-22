@@ -30,7 +30,7 @@ Musical creation
 - Notation in electronic and electroacoustic music
 - Notations for interactive music
 - Notation for sound installations
-- Notationn/representation technologie for the multimedia and time-based arts beyond music (dance, performance art, 
+- Notation/representation technologies for the multimedia and time-based arts beyond music (dance, performance art, 
 theatre, circus arts, animation, film etc).
 - Live coding
 
@@ -46,7 +46,7 @@ Musical notation
 
 Analysis, Musicology
 - Analysis of contemporary notation
-- Semiotic of notation
+- Semiotics of notation
 - Data mining, music notation corpus, databases
 - Ontologies of notation
 - Notation and cognition
@@ -73,7 +73,7 @@ Listening, teaching
 
 TENOR is intended to be a reasonably sized conference, accessible and affordable both to organizers (in terms of organization complexity and financial burden) and to participants. Organizers should expect in the range of 50 participants (according to recent years' attendance statistics).
 
-The recommended conference duration is 3 days. 
+The recommended conference duration is three days. 
 
 Parallel sessions should be avoided.
 
@@ -102,7 +102,7 @@ The list of members in the committee must be published on the conference website
 
 A **call for participation** must be drafted by the conference organizing committee in agreement with the TENOR steering committee. It should be ready at least 9 months before the conference.
 
-A large number of submissions is be more likely to result in a diverse and high-quality program for the conference: Lots of publicity is therefore needed, as soon as possible. The organizing committee can name a "Publicity Chair" in charge of all communication around the conference calls and program.
+A large number of submissions is be more likely to result in a diverse and high-quality program for the conference: lots of publicity is therefore needed, as soon as possible. The organizing committee can name a "Publicity Chair" in charge of all communication around the conference calls and program.
 
 > The earlier the conference is announced, the better for its success! Have the conference web site ready for the first call for contributions. Post this call early (between July and October, when the main of the computer music conferences season is over), and do not hesitate to post reminders. 
 
@@ -128,7 +128,7 @@ The reviewers provide comments to the selection committee to motivate their scor
 
 > In order to be included in the program and published, selected papers should be presented during the event: at least one of the authors must be registered and attend the conference -- be sure to make that point clear in the call for participation!
 
-As well all know, 2020-2021 have been very special years for our academic and artistic communities. TENOR 2021 has been held fully online, and the steering committee would like to encourage future organizers to consider and propose hybrid modes of participations, allowing participants from all horizons, including those with lesser funding, support, or availabilities to attend or present their work at the confernce.
+As we all know, 2020-2021 have been very special years for our academic and artistic communities. TENOR 2021 has been held fully online, and the steering committee would like to encourage future organizers to consider and propose hybrid modes of participations, allowing participants from all locations, including those with lesser funding, support, or availabilities to attend or present their work at the confernce.
 
 
 ## Proceedings
@@ -139,11 +139,11 @@ TENOR conference proceedings are on open access, distributed under the terms of 
 
 These include:
 
-- Individual papers (in PDF, "camera-ready" version) posted on the conference website and/or on the [dedicated page of tenor-conference.org](https://www.tenor-conference.org/proceedings.html), at least one day bfore the conference.
+- Individual papers (in PDF, "camera-ready" version) posted on the conference website and/or on the [dedicated page of tenor-conference.org](https://www.tenor-conference.org/proceedings.html), at least one day before the conference.
 
 - A complete document (also in PDF) including cover pages, table of contents, and page numbers. Organizers should order and provide an ISBN for this document.
 
-> Do not hestitate to sollicitate help to the TENOR steering committee for anything about the preparation and formatting of the conference proceedings.
+> Do not hestitate to solicit help from the TENOR steering committee for anything about the preparation and formatting of the conference proceedings.
 
 
 ## Keynote speakers, workshops and satellite events
@@ -168,7 +168,7 @@ It is possible (and very welcome) to join the conference to local artistic event
 
 TENOR aims at being an open and diverse conference welcoming the participation of all. 
 
-Local organizers are encouraged to foster diversity in their public announcements, webpages, and communication, as well as in the choice of speakers and members of the different committees.
+Local organizers are encouraged to foster diversity in their public announcements, webpages, and communications, as well as in the choice of speakers and members of the different committees.
 
 
 
@@ -178,7 +178,7 @@ The tenor registration fees must be set to an affordable level (typically around
 
 It is strongly recommended that special/discounted fees be proposed to students, and other non-academics/non-affiliated participants.
 
-Note: TENOR steering committee or program committee members are submitted to the same rules (and registration fees) as general attendees when presenting works at the conference. The organizing committee may wish to consider offering free or discounted registration to those not presenting any work at the conference. Please inform the steering committees of any specific rule or requirement in the hosting proposal, or at the latest before opening the registrations.
+Note: TENOR steering committee or program committee members are submitted to the same rules (and registration fees) as general attendees when presenting works at the conference. The organizing committee may wish to consider offering free or discounted registration to those not presenting any work at the conference. Please inform the steering committees of any specific rule or requirement in the hosting proposal, or at the latest before opening registration.
 
 
 ## Website
@@ -210,17 +210,17 @@ It is strongly recommended that applicants have attended at least one of the pre
 
 The application file must include at least the following items:
 
-- Location / Host institution.
-- Name, position, and short bio of organizers. Details of responsibilities in the organization.
-- Motivation and orientation.
-- Name and qualifications of the Program Committee chair; preliminary proposals for the program committee if relevant.
-- Available facilities.
-- Staff and other resources.
-- Dates.
-- Schedule/timeline of the event (call for papers, submissions, applications, notifications, camera ready submissions, program).
-- Proposed guest speakers, sattellite evens, musical program.
-- Funding and support.
-- Budget estimate (see [example](tenor-budget-sample.xls).
+- Location / Host institution
+- Name, position, and short bio of organizers. Details of responsibilities in the organization
+- Motivation and orientation
+- Name and qualifications of the Program Committee chair; preliminary proposals for the program committee if relevant
+- Available facilities
+- Staff and other resources
+- Dates
+- Schedule/timeline of the event (call for papers, submissions, applications, notifications, camera ready submissions, program)
+- Proposed guest speakers, sattellite evens, musical program
+- Funding and support
+- Budget estimate (see [example](tenor-budget-sample.xls)
 
 > Send an apllication to [the steering committee](mailto:sc@tenor-conferenc.org), or get in touch for preliminary advice or information!
 
