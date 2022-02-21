@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>A guide for organizing TENOR</title>
+        <style>
+/* From extension vscode.github */
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+    display: none;
+}
+
+/* From extension vscode.markdown-math */
+@font-face{font-family:KaTeX_AMS;src:url(fonts/KaTeX_AMS-Regular.woff2) format("woff2"),url(fonts/KaTeX_AMS-Regular.woff) format("woff"),url(fonts/KaTeX_AMS-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Caligraphic;src:url(fonts/KaTeX_Caligraphic-Bold.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Bold.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Caligraphic;src:url(fonts/KaTeX_Caligraphic-Regular.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Regular.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Fraktur;src:url(fonts/KaTeX_Fraktur-Bold.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Bold.woff) format("woff"),url(fonts/KaTeX_Fraktur-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Fraktur;src:url(fonts/KaTeX_Fraktur-Regular.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Regular.woff) format("woff"),url(fonts/KaTeX_Fraktur-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Bold.woff2) format("woff2"),url(fonts/KaTeX_Main-Bold.woff) format("woff"),url(fonts/KaTeX_Main-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Main-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Main-BoldItalic.ttf) format("truetype");font-weight:700;font-style:italic}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Italic.woff2) format("woff2"),url(fonts/KaTeX_Main-Italic.woff) format("woff"),url(fonts/KaTeX_Main-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Regular.woff2) format("woff2"),url(fonts/KaTeX_Main-Regular.woff) format("woff"),url(fonts/KaTeX_Main-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Math;src:url(fonts/KaTeX_Math-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Math-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Math-BoldItalic.ttf) format("truetype");font-weight:700;font-style:italic}@font-face{font-family:KaTeX_Math;src:url(fonts/KaTeX_Math-Italic.woff2) format("woff2"),url(fonts/KaTeX_Math-Italic.woff) format("woff"),url(fonts/KaTeX_Math-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Bold.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Bold.woff) format("woff"),url(fonts/KaTeX_SansSerif-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Italic.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Italic.woff) format("woff"),url(fonts/KaTeX_SansSerif-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Regular.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Regular.woff) format("woff"),url(fonts/KaTeX_SansSerif-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Script;src:url(fonts/KaTeX_Script-Regular.woff2) format("woff2"),url(fonts/KaTeX_Script-Regular.woff) format("woff"),url(fonts/KaTeX_Script-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size1;src:url(fonts/KaTeX_Size1-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size1-Regular.woff) format("woff"),url(fonts/KaTeX_Size1-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size2;src:url(fonts/KaTeX_Size2-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size2-Regular.woff) format("woff"),url(fonts/KaTeX_Size2-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size3;src:url(fonts/KaTeX_Size3-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size3-Regular.woff) format("woff"),url(fonts/KaTeX_Size3-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size4;src:url(fonts/KaTeX_Size4-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size4-Regular.woff) format("woff"),url(fonts/KaTeX_Size4-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Typewriter;src:url(fonts/KaTeX_Typewriter-Regular.woff2) format("woff2"),url(fonts/KaTeX_Typewriter-Regular.woff) format("woff"),url(fonts/KaTeX_Typewriter-Regular.ttf) format("truetype");font-weight:400;font-style:normal}.katex{font:normal 1.21em KaTeX_Main,Times New Roman,serif;line-height:1.2;text-indent:0;text-rendering:auto;border-color:currentColor}.katex *{-ms-high-contrast-adjust:none!important}.katex .katex-version:after{content:"0.13.0"}.katex .katex-mathml{position:absolute;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden}.katex .katex-html>.newline{display:block}.katex .base{position:relative;white-space:nowrap;width:-webkit-min-content;width:-moz-min-content;width:min-content}.katex .base,.katex .strut{display:inline-block}.katex .textbf{font-weight:700}.katex .textit{font-style:italic}.katex .textrm{font-family:KaTeX_Main}.katex .textsf{font-family:KaTeX_SansSerif}.katex .texttt{font-family:KaTeX_Typewriter}.katex .mathnormal{font-family:KaTeX_Math;font-style:italic}.katex .mathit{font-family:KaTeX_Main;font-style:italic}.katex .mathrm{font-style:normal}.katex .mathbf{font-family:KaTeX_Main;font-weight:700}.katex .boldsymbol{font-family:KaTeX_Math;font-weight:700;font-style:italic}.katex .amsrm,.katex .mathbb,.katex .textbb{font-family:KaTeX_AMS}.katex .mathcal{font-family:KaTeX_Caligraphic}.katex .mathfrak,.katex .textfrak{font-family:KaTeX_Fraktur}.katex .mathtt{font-family:KaTeX_Typewriter}.katex .mathscr,.katex .textscr{font-family:KaTeX_Script}.katex .mathsf,.katex .textsf{font-family:KaTeX_SansSerif}.katex .mathboldsf,.katex .textboldsf{font-family:KaTeX_SansSerif;font-weight:700}.katex .mathitsf,.katex .textitsf{font-family:KaTeX_SansSerif;font-style:italic}.katex .mainrm{font-family:KaTeX_Main;font-style:normal}.katex .vlist-t{display:inline-table;table-layout:fixed;border-collapse:collapse}.katex .vlist-r{display:table-row}.katex .vlist{display:table-cell;vertical-align:bottom;position:relative}.katex .vlist>span{display:block;height:0;position:relative}.katex .vlist>span>span{display:inline-block}.katex .vlist>span>.pstrut{overflow:hidden;width:0}.katex .vlist-t2{margin-right:-2px}.katex .vlist-s{display:table-cell;vertical-align:bottom;font-size:1px;width:2px;min-width:2px}.katex .vbox{display:inline-flex;flex-direction:column;align-items:baseline}.katex .hbox{width:100%}.katex .hbox,.katex .thinbox{display:inline-flex;flex-direction:row}.katex .thinbox{width:0;max-width:0}.katex .msupsub{text-align:left}.katex .mfrac>span>span{text-align:center}.katex .mfrac .frac-line{display:inline-block;width:100%;border-bottom-style:solid}.katex .hdashline,.katex .hline,.katex .mfrac .frac-line,.katex .overline .overline-line,.katex .rule,.katex .underline .underline-line{min-height:1px}.katex .mspace{display:inline-block}.katex .clap,.katex .llap,.katex .rlap{width:0;position:relative}.katex .clap>.inner,.katex .llap>.inner,.katex .rlap>.inner{position:absolute}.katex .clap>.fix,.katex .llap>.fix,.katex .rlap>.fix{display:inline-block}.katex .llap>.inner{right:0}.katex .clap>.inner,.katex .rlap>.inner{left:0}.katex .clap>.inner>span{margin-left:-50%;margin-right:50%}.katex .rule{display:inline-block;border:0 solid;position:relative}.katex .hline,.katex .overline .overline-line,.katex .underline .underline-line{display:inline-block;width:100%;border-bottom-style:solid}.katex .hdashline{display:inline-block;width:100%;border-bottom-style:dashed}.katex .sqrt>.root{margin-left:.27777778em;margin-right:-.55555556em}.katex .fontsize-ensurer.reset-size1.size1,.katex .sizing.reset-size1.size1{font-size:1em}.katex .fontsize-ensurer.reset-size1.size2,.katex .sizing.reset-size1.size2{font-size:1.2em}.katex .fontsize-ensurer.reset-size1.size3,.katex .sizing.reset-size1.size3{font-size:1.4em}.katex .fontsize-ensurer.reset-size1.size4,.katex .sizing.reset-size1.size4{font-size:1.6em}.katex .fontsize-ensurer.reset-size1.size5,.katex .sizing.reset-size1.size5{font-size:1.8em}.katex .fontsize-ensurer.reset-size1.size6,.katex .sizing.reset-size1.size6{font-size:2em}.katex .fontsize-ensurer.reset-size1.size7,.katex .sizing.reset-size1.size7{font-size:2.4em}.katex .fontsize-ensurer.reset-size1.size8,.katex .sizing.reset-size1.size8{font-size:2.88em}.katex .fontsize-ensurer.reset-size1.size9,.katex .sizing.reset-size1.size9{font-size:3.456em}.katex .fontsize-ensurer.reset-size1.size10,.katex .sizing.reset-size1.size10{font-size:4.148em}.katex .fontsize-ensurer.reset-size1.size11,.katex .sizing.reset-size1.size11{font-size:4.976em}.katex .fontsize-ensurer.reset-size2.size1,.katex .sizing.reset-size2.size1{font-size:.83333333em}.katex .fontsize-ensurer.reset-size2.size2,.katex .sizing.reset-size2.size2{font-size:1em}.katex .fontsize-ensurer.reset-size2.size3,.katex .sizing.reset-size2.size3{font-size:1.16666667em}.katex .fontsize-ensurer.reset-size2.size4,.katex .sizing.reset-size2.size4{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size2.size5,.katex .sizing.reset-size2.size5{font-size:1.5em}.katex .fontsize-ensurer.reset-size2.size6,.katex .sizing.reset-size2.size6{font-size:1.66666667em}.katex .fontsize-ensurer.reset-size2.size7,.katex .sizing.reset-size2.size7{font-size:2em}.katex .fontsize-ensurer.reset-size2.size8,.katex .sizing.reset-size2.size8{font-size:2.4em}.katex .fontsize-ensurer.reset-size2.size9,.katex .sizing.reset-size2.size9{font-size:2.88em}.katex .fontsize-ensurer.reset-size2.size10,.katex .sizing.reset-size2.size10{font-size:3.45666667em}.katex .fontsize-ensurer.reset-size2.size11,.katex .sizing.reset-size2.size11{font-size:4.14666667em}.katex .fontsize-ensurer.reset-size3.size1,.katex .sizing.reset-size3.size1{font-size:.71428571em}.katex .fontsize-ensurer.reset-size3.size2,.katex .sizing.reset-size3.size2{font-size:.85714286em}.katex .fontsize-ensurer.reset-size3.size3,.katex .sizing.reset-size3.size3{font-size:1em}.katex .fontsize-ensurer.reset-size3.size4,.katex .sizing.reset-size3.size4{font-size:1.14285714em}.katex .fontsize-ensurer.reset-size3.size5,.katex .sizing.reset-size3.size5{font-size:1.28571429em}.katex .fontsize-ensurer.reset-size3.size6,.katex .sizing.reset-size3.size6{font-size:1.42857143em}.katex .fontsize-ensurer.reset-size3.size7,.katex .sizing.reset-size3.size7{font-size:1.71428571em}.katex .fontsize-ensurer.reset-size3.size8,.katex .sizing.reset-size3.size8{font-size:2.05714286em}.katex .fontsize-ensurer.reset-size3.size9,.katex .sizing.reset-size3.size9{font-size:2.46857143em}.katex .fontsize-ensurer.reset-size3.size10,.katex .sizing.reset-size3.size10{font-size:2.96285714em}.katex .fontsize-ensurer.reset-size3.size11,.katex .sizing.reset-size3.size11{font-size:3.55428571em}.katex .fontsize-ensurer.reset-size4.size1,.katex .sizing.reset-size4.size1{font-size:.625em}.katex .fontsize-ensurer.reset-size4.size2,.katex .sizing.reset-size4.size2{font-size:.75em}.katex .fontsize-ensurer.reset-size4.size3,.katex .sizing.reset-size4.size3{font-size:.875em}.katex .fontsize-ensurer.reset-size4.size4,.katex .sizing.reset-size4.size4{font-size:1em}.katex .fontsize-ensurer.reset-size4.size5,.katex .sizing.reset-size4.size5{font-size:1.125em}.katex .fontsize-ensurer.reset-size4.size6,.katex .sizing.reset-size4.size6{font-size:1.25em}.katex .fontsize-ensurer.reset-size4.size7,.katex .sizing.reset-size4.size7{font-size:1.5em}.katex .fontsize-ensurer.reset-size4.size8,.katex .sizing.reset-size4.size8{font-size:1.8em}.katex .fontsize-ensurer.reset-size4.size9,.katex .sizing.reset-size4.size9{font-size:2.16em}.katex .fontsize-ensurer.reset-size4.size10,.katex .sizing.reset-size4.size10{font-size:2.5925em}.katex .fontsize-ensurer.reset-size4.size11,.katex .sizing.reset-size4.size11{font-size:3.11em}.katex .fontsize-ensurer.reset-size5.size1,.katex .sizing.reset-size5.size1{font-size:.55555556em}.katex .fontsize-ensurer.reset-size5.size2,.katex .sizing.reset-size5.size2{font-size:.66666667em}.katex .fontsize-ensurer.reset-size5.size3,.katex .sizing.reset-size5.size3{font-size:.77777778em}.katex .fontsize-ensurer.reset-size5.size4,.katex .sizing.reset-size5.size4{font-size:.88888889em}.katex .fontsize-ensurer.reset-size5.size5,.katex .sizing.reset-size5.size5{font-size:1em}.katex .fontsize-ensurer.reset-size5.size6,.katex .sizing.reset-size5.size6{font-size:1.11111111em}.katex .fontsize-ensurer.reset-size5.size7,.katex .sizing.reset-size5.size7{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size5.size8,.katex .sizing.reset-size5.size8{font-size:1.6em}.katex .fontsize-ensurer.reset-size5.size9,.katex .sizing.reset-size5.size9{font-size:1.92em}.katex .fontsize-ensurer.reset-size5.size10,.katex .sizing.reset-size5.size10{font-size:2.30444444em}.katex .fontsize-ensurer.reset-size5.size11,.katex .sizing.reset-size5.size11{font-size:2.76444444em}.katex .fontsize-ensurer.reset-size6.size1,.katex .sizing.reset-size6.size1{font-size:.5em}.katex .fontsize-ensurer.reset-size6.size2,.katex .sizing.reset-size6.size2{font-size:.6em}.katex .fontsize-ensurer.reset-size6.size3,.katex .sizing.reset-size6.size3{font-size:.7em}.katex .fontsize-ensurer.reset-size6.size4,.katex .sizing.reset-size6.size4{font-size:.8em}.katex .fontsize-ensurer.reset-size6.size5,.katex .sizing.reset-size6.size5{font-size:.9em}.katex .fontsize-ensurer.reset-size6.size6,.katex .sizing.reset-size6.size6{font-size:1em}.katex .fontsize-ensurer.reset-size6.size7,.katex .sizing.reset-size6.size7{font-size:1.2em}.katex .fontsize-ensurer.reset-size6.size8,.katex .sizing.reset-size6.size8{font-size:1.44em}.katex .fontsize-ensurer.reset-size6.size9,.katex .sizing.reset-size6.size9{font-size:1.728em}.katex .fontsize-ensurer.reset-size6.size10,.katex .sizing.reset-size6.size10{font-size:2.074em}.katex .fontsize-ensurer.reset-size6.size11,.katex .sizing.reset-size6.size11{font-size:2.488em}.katex .fontsize-ensurer.reset-size7.size1,.katex .sizing.reset-size7.size1{font-size:.41666667em}.katex .fontsize-ensurer.reset-size7.size2,.katex .sizing.reset-size7.size2{font-size:.5em}.katex .fontsize-ensurer.reset-size7.size3,.katex .sizing.reset-size7.size3{font-size:.58333333em}.katex .fontsize-ensurer.reset-size7.size4,.katex .sizing.reset-size7.size4{font-size:.66666667em}.katex .fontsize-ensurer.reset-size7.size5,.katex .sizing.reset-size7.size5{font-size:.75em}.katex .fontsize-ensurer.reset-size7.size6,.katex .sizing.reset-size7.size6{font-size:.83333333em}.katex .fontsize-ensurer.reset-size7.size7,.katex .sizing.reset-size7.size7{font-size:1em}.katex .fontsize-ensurer.reset-size7.size8,.katex .sizing.reset-size7.size8{font-size:1.2em}.katex .fontsize-ensurer.reset-size7.size9,.katex .sizing.reset-size7.size9{font-size:1.44em}.katex .fontsize-ensurer.reset-size7.size10,.katex .sizing.reset-size7.size10{font-size:1.72833333em}.katex .fontsize-ensurer.reset-size7.size11,.katex .sizing.reset-size7.size11{font-size:2.07333333em}.katex .fontsize-ensurer.reset-size8.size1,.katex .sizing.reset-size8.size1{font-size:.34722222em}.katex .fontsize-ensurer.reset-size8.size2,.katex .sizing.reset-size8.size2{font-size:.41666667em}.katex .fontsize-ensurer.reset-size8.size3,.katex .sizing.reset-size8.size3{font-size:.48611111em}.katex .fontsize-ensurer.reset-size8.size4,.katex .sizing.reset-size8.size4{font-size:.55555556em}.katex .fontsize-ensurer.reset-size8.size5,.katex .sizing.reset-size8.size5{font-size:.625em}.katex .fontsize-ensurer.reset-size8.size6,.katex .sizing.reset-size8.size6{font-size:.69444444em}.katex .fontsize-ensurer.reset-size8.size7,.katex .sizing.reset-size8.size7{font-size:.83333333em}.katex .fontsize-ensurer.reset-size8.size8,.katex .sizing.reset-size8.size8{font-size:1em}.katex .fontsize-ensurer.reset-size8.size9,.katex .sizing.reset-size8.size9{font-size:1.2em}.katex .fontsize-ensurer.reset-size8.size10,.katex .sizing.reset-size8.size10{font-size:1.44027778em}.katex .fontsize-ensurer.reset-size8.size11,.katex .sizing.reset-size8.size11{font-size:1.72777778em}.katex .fontsize-ensurer.reset-size9.size1,.katex .sizing.reset-size9.size1{font-size:.28935185em}.katex .fontsize-ensurer.reset-size9.size2,.katex .sizing.reset-size9.size2{font-size:.34722222em}.katex .fontsize-ensurer.reset-size9.size3,.katex .sizing.reset-size9.size3{font-size:.40509259em}.katex .fontsize-ensurer.reset-size9.size4,.katex .sizing.reset-size9.size4{font-size:.46296296em}.katex .fontsize-ensurer.reset-size9.size5,.katex .sizing.reset-size9.size5{font-size:.52083333em}.katex .fontsize-ensurer.reset-size9.size6,.katex .sizing.reset-size9.size6{font-size:.5787037em}.katex .fontsize-ensurer.reset-size9.size7,.katex .sizing.reset-size9.size7{font-size:.69444444em}.katex .fontsize-ensurer.reset-size9.size8,.katex .sizing.reset-size9.size8{font-size:.83333333em}.katex .fontsize-ensurer.reset-size9.size9,.katex .sizing.reset-size9.size9{font-size:1em}.katex .fontsize-ensurer.reset-size9.size10,.katex .sizing.reset-size9.size10{font-size:1.20023148em}.katex .fontsize-ensurer.reset-size9.size11,.katex .sizing.reset-size9.size11{font-size:1.43981481em}.katex .fontsize-ensurer.reset-size10.size1,.katex .sizing.reset-size10.size1{font-size:.24108004em}.katex .fontsize-ensurer.reset-size10.size2,.katex .sizing.reset-size10.size2{font-size:.28929605em}.katex .fontsize-ensurer.reset-size10.size3,.katex .sizing.reset-size10.size3{font-size:.33751205em}.katex .fontsize-ensurer.reset-size10.size4,.katex .sizing.reset-size10.size4{font-size:.38572806em}.katex .fontsize-ensurer.reset-size10.size5,.katex .sizing.reset-size10.size5{font-size:.43394407em}.katex .fontsize-ensurer.reset-size10.size6,.katex .sizing.reset-size10.size6{font-size:.48216008em}.katex .fontsize-ensurer.reset-size10.size7,.katex .sizing.reset-size10.size7{font-size:.57859209em}.katex .fontsize-ensurer.reset-size10.size8,.katex .sizing.reset-size10.size8{font-size:.69431051em}.katex .fontsize-ensurer.reset-size10.size9,.katex .sizing.reset-size10.size9{font-size:.83317261em}.katex .fontsize-ensurer.reset-size10.size10,.katex .sizing.reset-size10.size10{font-size:1em}.katex .fontsize-ensurer.reset-size10.size11,.katex .sizing.reset-size10.size11{font-size:1.19961427em}.katex .fontsize-ensurer.reset-size11.size1,.katex .sizing.reset-size11.size1{font-size:.20096463em}.katex .fontsize-ensurer.reset-size11.size2,.katex .sizing.reset-size11.size2{font-size:.24115756em}.katex .fontsize-ensurer.reset-size11.size3,.katex .sizing.reset-size11.size3{font-size:.28135048em}.katex .fontsize-ensurer.reset-size11.size4,.katex .sizing.reset-size11.size4{font-size:.32154341em}.katex .fontsize-ensurer.reset-size11.size5,.katex .sizing.reset-size11.size5{font-size:.36173633em}.katex .fontsize-ensurer.reset-size11.size6,.katex .sizing.reset-size11.size6{font-size:.40192926em}.katex .fontsize-ensurer.reset-size11.size7,.katex .sizing.reset-size11.size7{font-size:.48231511em}.katex .fontsize-ensurer.reset-size11.size8,.katex .sizing.reset-size11.size8{font-size:.57877814em}.katex .fontsize-ensurer.reset-size11.size9,.katex .sizing.reset-size11.size9{font-size:.69453376em}.katex .fontsize-ensurer.reset-size11.size10,.katex .sizing.reset-size11.size10{font-size:.83360129em}.katex .fontsize-ensurer.reset-size11.size11,.katex .sizing.reset-size11.size11{font-size:1em}.katex .delimsizing.size1{font-family:KaTeX_Size1}.katex .delimsizing.size2{font-family:KaTeX_Size2}.katex .delimsizing.size3{font-family:KaTeX_Size3}.katex .delimsizing.size4{font-family:KaTeX_Size4}.katex .delimsizing.mult .delim-size1>span{font-family:KaTeX_Size1}.katex .delimsizing.mult .delim-size4>span{font-family:KaTeX_Size4}.katex .nulldelimiter{display:inline-block;width:.12em}.katex .delimcenter,.katex .op-symbol{position:relative}.katex .op-symbol.small-op{font-family:KaTeX_Size1}.katex .op-symbol.large-op{font-family:KaTeX_Size2}.katex .accent>.vlist-t,.katex .op-limits>.vlist-t{text-align:center}.katex .accent .accent-body{position:relative}.katex .accent .accent-body:not(.accent-full){width:0}.katex .overlay{display:block}.katex .mtable .vertical-separator{display:inline-block;min-width:1px}.katex .mtable .arraycolsep{display:inline-block}.katex .mtable .col-align-c>.vlist-t{text-align:center}.katex .mtable .col-align-l>.vlist-t{text-align:left}.katex .mtable .col-align-r>.vlist-t{text-align:right}.katex .svg-align{text-align:left}.katex svg{display:block;position:absolute;width:100%;height:inherit;fill:currentColor;stroke:currentColor;fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1}.katex svg path{stroke:none}.katex img{border-style:none;min-width:0;min-height:0;max-width:none;max-height:none}.katex .stretchy{width:100%;display:block;position:relative;overflow:hidden}.katex .stretchy:after,.katex .stretchy:before{content:""}.katex .hide-tail{width:100%;position:relative;overflow:hidden}.katex .halfarrow-left{position:absolute;left:0;width:50.2%;overflow:hidden}.katex .halfarrow-right{position:absolute;right:0;width:50.2%;overflow:hidden}.katex .brace-left{position:absolute;left:0;width:25.1%;overflow:hidden}.katex .brace-center{position:absolute;left:25%;width:50%;overflow:hidden}.katex .brace-right{position:absolute;right:0;width:25.1%;overflow:hidden}.katex .x-arrow-pad{padding:0 .5em}.katex .cd-arrow-pad{padding:0 .55556em 0 .27778em}.katex .mover,.katex .munder,.katex .x-arrow{text-align:center}.katex .boxpad{padding:0 .3em}.katex .fbox,.katex .fcolorbox{box-sizing:border-box;border:.04em solid}.katex .cancel-pad{padding:0 .2em}.katex .cancel-lap{margin-left:-.2em;margin-right:-.2em}.katex .sout{border-bottom-style:solid;border-bottom-width:.08em}.katex .angl{box-sizing:border-content;border-top:.049em solid;border-right:.049em solid;margin-right:.03889em}.katex .anglpad{padding:0 .03889em}.katex .eqn-num:before{counter-increment:katexEqnNo;content:"(" counter(katexEqnNo) ")"}.katex .mml-eqn-num:before{counter-increment:mmlEqnNo;content:"(" counter(mmlEqnNo) ")"}.katex .mtr-glue{width:50%}.katex .cd-vert-arrow{display:inline-block;position:relative}.katex .cd-label-left{display:inline-block;position:absolute;right:calc(50% + .3em);text-align:left}.katex .cd-label-right{display:inline-block;position:absolute;left:calc(50% + .3em);text-align:right}.katex-display{display:block;margin:1em 0;text-align:center}.katex-display>.katex{display:block;text-align:center;white-space:nowrap}.katex-display>.katex>.katex-html{display:block;position:relative}.katex-display>.katex>.katex-html>.tag{position:absolute;right:0}.katex-display.leqno>.katex>.katex-html>.tag{left:0;right:auto}.katex-display.fleqn>.katex{text-align:left;padding-left:2em}body{counter-reset:katexEqnNo mmlEqnNo}
+
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.katex-error {
+	color: var(--vscode-editorError-foreground);
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="a-guide-for-organizing-tenor">A guide for organizing TENOR</h1>
+<h4 id="international-conference-on-technologies-for-music-notation-and-representation">International Conference on Technologies for Music Notation and Representation</h4>
+<p>Draft document - Last updated July 2021</p>
+<h2 id="presentation">Presentation</h2>
+<p>TENOR (<strong>International Conference on Technologies for Music Notation and Representation</strong>) is an international forum dedicated to theoretical and applied research and development in Music Notation and Representation.</p>
+<p>TENOR is a scientific conference with a strong focus on computer tools and applications, but also accepts &quot;technology&quot; in a broader sense -- as well as other fields of study in research and artistic domains  (see <a href="#scope">Scope</a> below).
+The conference also emphasizes music creation and artistic practice, and generally includes a musical program in addition to the scientific/paper tracks.</p>
+<p>The conference is organized annually since 2015. See <a href="https://tenor-conference.org">https://tenor-conference.org</a>.</p>
+<p>The official language of the conference is English.</p>
+<h2 id="scope">Scope</h2>
+<p>TENOR welcomes focused or interdisciplinary research topics around technologies for music notation and representation.
+<em>Technology</em> refers to any mean that may contribute to the notation, representation and/or visualisation of the music.</p>
+<p>A list of relevant topics is given in the past conferences websites. These include, but are not limited to:</p>
+<p>Musical creation</p>
+<ul>
+<li>Notation in electronic and electroacoustic music</li>
+<li>Notations for interactive music</li>
+<li>Notation for sound installations</li>
+<li>Notation/representation technologies for the multimedia and time-based arts beyond music (dance, performance art,
+theatre, circus arts, animation, film etc).</li>
+<li>Live coding</li>
+</ul>
+<p>Musical notation</p>
+<ul>
+<li>Computer applications for music notation</li>
+<li>Languages for music notation</li>
+<li>Notations for space, gesture, movement etc.</li>
+<li>Notation and mobile devices</li>
+<li>Exchange formats for music notation</li>
+<li>Online tools for music notation</li>
+<li>Non-visual notation systems</li>
+<li>Notation of non-western music</li>
+</ul>
+<p>Analysis, Musicology</p>
+<ul>
+<li>Analysis of contemporary notation</li>
+<li>Semiotics of notation</li>
+<li>Data mining, music notation corpus, databases</li>
+<li>Ontologies of notation</li>
+<li>Notation and cognition</li>
+<li>Critical, aesthetic and sociological studies</li>
+</ul>
+<p>Representation, transcription</p>
+<ul>
+<li>Sound visualization</li>
+<li>Interactive representation</li>
+<li>Transcription in ethnomusicology and representation of non-written musics</li>
+<li>Non-western or ancient music transcription</li>
+<li>Representation and transcription in acoustic ecology and sound landscape</li>
+<li>Optical music recognition</li>
+</ul>
+<p>Listening, teaching</p>
+<ul>
+<li>Listening guides</li>
+<li>Live and offline annotation</li>
+<li>Notation for music pedagogy</li>
+</ul>
+<blockquote>
+<p>Conference organizers are welcome to highlight specific themes or topics and/or to propose new topics to include in the list.</p>
+</blockquote>
+<h2 id="size-and-duration">Size and duration</h2>
+<p>TENOR is intended to be a reasonably sized conference, accessible and affordable both to organizers (in terms of organization complexity and financial burden) and to participants. Organizers should expect in the range of 50 participants (according to recent years' attendance statistics).</p>
+<p>The recommended conference duration is three days.</p>
+<p>Parallel sessions should be avoided.</p>
+<h2 id="timeline">Timeline</h2>
+<p>TENOR is generally held in spring or early summer (April to July).
+Candidate hosts are welcome to propose alternative dates, taking into account the agenda of other related events with potential conflicting dates: ICMC, SMC, NIME, MEC...</p>
+<p>It is recommended that potential hosts apply or get in touch with the TENOR steering committee at the latest by the beginning of the previous year, so that the proposal can be prepared on time, and presented (if accepted) during the previous edition of the conference (e.g. by the end of 2021/beginning of 2022 for organizing 2023 -- <em>at the latest!</em>).</p>
+<blockquote>
+<p>The TENOR steering committee is committed to help and advise in preparing a proposal for hosting any future edition of the confrence. Please do not hesitate to <a href="mailto:sc@tenor-conferenc.org">get in touch</a> !</p>
+</blockquote>
+<h2 id="program-chair-and-program-committee">Program chair and Program committee</h2>
+<p>The organizers must name one or more Program Chair(s), who will undertake the constitution of a full  <strong>program committee</strong> and supervise the submission, paper selection and publication process.</p>
+<p>The program committee can include members of the steering committee and of previous year’s committees. It must be validated by the conference steering committee.</p>
+<p>The list of members in the committee must be published on the conference website at the time of the first call for participation, as well as in the conference proceedings.</p>
+<h2 id="call-for-participation">Call for participation</h2>
+<p>A <strong>call for participation</strong> must be drafted by the conference organizing committee in agreement with the TENOR steering committee. It should be ready at least 9 months before the conference.</p>
+<p>A large number of submissions is be more likely to result in a diverse and high-quality program for the conference: lots of publicity is therefore needed, as soon as possible. The organizing committee can name a &quot;Publicity Chair&quot; in charge of all communication around the conference calls and program.</p>
+<blockquote>
+<p>The earlier the conference is announced, the better for its success! Have the conference web site ready for the first call for contributions. Post this call early (between July and October, when the main of the computer music conferences season is over), and do not hesitate to post reminders.</p>
+</blockquote>
+<h2 id="papers-submission-and-reviewing-process">Papers submission and reviewing process</h2>
+<p>The TENOR conference has the ambition to foster a high-level scientific quality and to connect high-quality scientific and artistic approaches. It is therefore recommended that due diligence is exercised in the paper submission, review, and publication process.</p>
+<p>Use of EasyChair (<a href="http://easychair.org">http://easychair.org</a>) is recommended for handling the submission and reviewing.</p>
+<p>Submissions and reviews must be based on full papers, presented and formatted according to the provided TENOR templates.</p>
+<p>Papers should have between 4 and 10 pages, following the provided template.</p>
+<p>They will be peer-reviewed and evaluated on the basis of originality, significance of the contribution to the field, quality of research, quality of writing and contribution to conference program diversity. They should be solid, self-contained contributions to a research program, and contain clear statements of contribution relative to the state of the art, whenever relevant.</p>
+<p>The reviewing process is double-blind, and each papers must receive at least three reviews.</p>
+<p>The reviewers provide comments to the selection committee to motivate their scores, as well as indications for improvement to the authors. The organizer must emphasize the reviewers’ responsibility to uphold the scientific quality of the process, notably with detailed comments. Reviewers may also be instructed to weigh the contribution of a paper relative to its length (e.g. longer/8-10 pages papers must make a very significant contribution). They shall have access to the final decision concerning the papers they evaluated.</p>
+<h2 id="paper-presentation">Paper presentation</h2>
+<blockquote>
+<p>In order to be included in the program and published, selected papers should be presented during the event: at least one of the authors must be registered and attend the conference -- be sure to make that point clear in the call for participation!</p>
+</blockquote>
+<p>As we all know, 2020-2021 have been very special years for our academic and artistic communities. TENOR 2021 has been held fully online, and the steering committee would like to encourage future organizers to consider and propose hybrid modes of participations, allowing participants from all locations, including those with lesser funding, support, or availabilities to attend or present their work at the confernce.</p>
+<h2 id="proceedings">Proceedings</h2>
+<p>Selected papers must be published in TENOR conference proceedings.</p>
+<p>TENOR conference proceedings are on open access, distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction (provided the original author and source are credited).</p>
+<p>These include:</p>
+<ul>
+<li>
+<p>Individual papers (in PDF, &quot;camera-ready&quot; version) posted on the conference website and/or on the <a href="https://www.tenor-conference.org/proceedings.html">dedicated page of tenor-conference.org</a>, at least one day before the conference.</p>
+</li>
+<li>
+<p>A complete document (also in PDF) including cover pages, table of contents, and page numbers. Organizers should order and provide an ISBN for this document.</p>
+</li>
+</ul>
+<blockquote>
+<p>Do not hestitate to solicit help from the TENOR steering committee for anything about the preparation and formatting of the conference proceedings.</p>
+</blockquote>
+<h2 id="keynote-speakers-workshops-and-satellite-events">Keynote speakers, workshops and satellite events</h2>
+<p>It is recommended that each TENOR edition includes one or more keynote and/or special sessions, at the discretion of the organizers.</p>
+<p>The organization of satellite events (e.g. workshops) is also encouraged.</p>
+<p>These should be all be included in the hosting proposal, in the program and in the budget.</p>
+<h2 id="artisticmusical-program">Artistic/musical program</h2>
+<p>The contents and curation of the artistic and musical program of the TENOR conference is under the responsibility of the conference organizers.</p>
+<p>A call for participation can be issued along with the call for scientific submissions, or as a separate call.  Artistic submission, reviewing and processing should be kept separate from the academic submission process.</p>
+<p>It is possible (and very welcome) to join the conference to local artistic events or institutions and make necessary arrangements to involve or invite local or external artists.</p>
+<h2 id="statement-on-inclusion-and-diversity">Statement on inclusion and diversity</h2>
+<p>TENOR aims at being an open and diverse conference welcoming the participation of all.</p>
+<p>Local organizers are encouraged to foster diversity in their public announcements, webpages, and communications, as well as in the choice of speakers and members of the different committees.</p>
+<h2 id="fees">Fees</h2>
+<p>The tenor registration fees must be set to an affordable level (typically around/under 100€). Please get in touch with the steering committee for advice and information about previous edition fees.</p>
+<p>It is strongly recommended that special/discounted fees be proposed to students, and other non-academics/non-affiliated participants.</p>
+<p>Note: TENOR steering committee or program committee members are submitted to the same rules (and registration fees) as general attendees when presenting works at the conference. The organizing committee may wish to consider offering free or discounted registration to those not presenting any work at the conference. Please inform the steering committees of any specific rule or requirement in the hosting proposal, or at the latest before opening registration.</p>
+<h2 id="website">Website</h2>
+<p>A website should be created for the conference. It should be online (even in a preliminary shape) at the time of the conference announcement (i.e. during TENOR N-1).</p>
+<p>On its final shape, the conference website should include:</p>
+<ul>
+<li>A general presentation of the conference, including links to the <a href="https://www.tenor-conference.org">TENOR website</a> and to previous TENOR editions.</li>
+<li>The call for participation (as soon as possible!)</li>
+<li>A list of local organizing committee members and of the scientific/artistic committees.</li>
+<li>A detailed program of the conference (as soon as available)</li>
+<li>Practical information about attendance, registration, ...</li>
+</ul>
+<blockquote>
+<p>The TENOR steering committee has the capacity to host or archive (after the conference) the conference website, but the website development and maintenance should be ensured by qualified staff or members of the local organizing committee.</p>
+</blockquote>
+<h2 id="logo">Logo</h2>
+<img src="file:////Users/bresson/SRC/tenor-website/guidelines/tenor.png" width="100" align="right">
+<p>The official TENOR logo should be used for the conference, but organizers are free (and encouraged) to decline its colors or other details (please submit a proposal to the steering committee before to make it public).</p>
+<h2 id="application">Application</h2>
+<p>Applicants for TENOR organization must provide an application file in a free format, considering the guidelines above.</p>
+<p>It is strongly recommended that applicants have attended at least one of the previous TENOR conference editions.</p>
+<p>The application file must include at least the following items:</p>
+<ul>
+<li>Location / Host institution</li>
+<li>Name, position, and short bio of organizers. Details of responsibilities in the organization</li>
+<li>Motivation and orientation</li>
+<li>Name and qualifications of the Program Committee chair; preliminary proposals for the program committee if relevant</li>
+<li>Available facilities</li>
+<li>Staff and other resources</li>
+<li>Dates</li>
+<li>Schedule/timeline of the event (call for papers, submissions, applications, notifications, camera ready submissions, program)</li>
+<li>Proposed guest speakers, sattellite evens, musical program</li>
+<li>Funding and support</li>
+<li>Budget estimate (see <a href="tenor-budget-sample.xls">example</a>)</li>
+</ul>
+<blockquote>
+<p>Send an apllication to <a href="mailto:sc@tenor-conferenc.org">the steering committee</a>, or get in touch for preliminary advice or information!</p>
+</blockquote>
+<h2 id="after-the-conference">After the conference</h2>
+<ul>
+<li>
+<p>Whenever possible, the conference website (including source code, graphic resources and associated documents) must be provided to the steering committee in its latest version for public archiving on the TENOR portal. Organizers should otherwise commit to leave the conference up and running on their local servers.</p>
+</li>
+<li>
+<p>The local organizer must submit a short report of experience in organizing the conference, including:</p>
+<ul>
+<li>Attendance statistics (number or registered participants, total number of participants)</li>
+<li>Submission statistics (number of submissions, number of accepted submissions)</li>
+<li>Detailed budget</li>
+</ul>
+</li>
+</ul>
+<p>This report is intended to share past experience with future organizers.</p>
+<hr>
+<p>Thanks for your interest in TENOR !</p>
+<p><a href="https://www.tenor-conference.org">https://www.tenor-conference.org</a></p>
+
+    </body>
+    </html>
