@@ -4,8 +4,16 @@
 	padding-bottom: 3mm;
 }
 
+.tenor-conf a {
+  color: #404040;
+}
+.tenor-conf a:hover,
+.tenor-conf a:focus {
+  color: #606060;
+}
+
 .tenor-year {
-	color: #0000cc;
+	color: #404040;
 	font-size: 200%;
 	font-weight: bold;
 }
@@ -67,4 +75,18 @@
 	font-size: 75%;
 	color: #aaa;
 	background: #fafafa;
+}
+
+
+.bg-primary a {
+  color: #404040;
+}
+.bg-primary a:hover,
+.bg-primary a:focus {
+  color: #606060;
+}
+
+.bg-primary {
+  background-color: #a0a0a0;
+  color: white;
 }
