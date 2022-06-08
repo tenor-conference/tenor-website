@@ -2,7 +2,7 @@
 #  A guide for organizing TENOR
 #### International Conference on Technologies for Music Notation and Representation
 
-Draft document - Last updated July 2021
+Draft document - Last updated June 2022
 
 
 ## Presentation
@@ -11,6 +11,7 @@ TENOR (**International Conference on Technologies for Music Notation and Represe
 
 TENOR is a scientific conference with a strong focus on computer tools and applications, but also accepts "technology" in a broader sense -- as well as other fields of study in research and artistic domains  (see [Scope](#scope) below).
 The conference also emphasizes music creation and artistic practice, and generally includes a musical program in addition to the scientific/paper tracks.
+TENOR has the ambition to foster a high-level scientific quality and to connect scientific and artistic approaches. It aims to be inclusive, supportive and accessible.
 
 The conference is organized annually since 2015. See [https://tenor-conference.org](https://tenor-conference.org).
 
@@ -20,6 +21,7 @@ The official language of the conference is English.
 
 TENOR welcomes focused or interdisciplinary research topics around technologies for music notation and representation.
 _Technology_ refers to any mean that may contribute to the notation, representation and/or visualisation of the music.
+Contributions that focus on the performance of notations, as well as social, cultural and philosophical concerns are also welcome. 
 
 A list of relevant topics is given in the past conferences websites. These include, but are not limited to:
 
@@ -106,7 +108,7 @@ A large number of submissions is be more likely to result in a diverse and high-
 
 ## Papers submission and reviewing process
 
-The TENOR conference has the ambition to foster a high-level scientific quality and to connect high-quality scientific and artistic approaches. It is therefore recommended that due diligence is exercised in the paper submission, review, and publication process.
+It is recommended that due diligence is exercised in the paper submission, review, and publication process.
 
 Use of EasyChair (http://easychair.org) is recommended for handling the submission and reviewing.
 
@@ -114,7 +116,7 @@ Submissions and reviews must be based on full papers, presented and formatted ac
 
 Papers should have between 4 and 10 pages, following the provided template.
 
-They will be peer-reviewed and evaluated on the basis of originality, significance of the contribution to the field, quality of research, quality of writing and contribution to conference program diversity. They should be solid, self-contained contributions to a research program, and contain clear statements of contribution relative to the state of the art, whenever relevant.
+They will evaluated on the basis of originality, significance of the contribution to the field, quality of research, quality of writing and contribution to conference program diversity. They should be solid, self-contained contributions to a research program, and contain clear statements of contribution relative to the state of the art, whenever relevant.
 
 The reviewing process is double-blind, and each papers must receive at least three reviews.
 
@@ -194,7 +196,7 @@ On its final shape, the conference website should include:
 
 ## Logo
 
-<img src="tenor.png" width="100" align="right">
+<img src="./tenor.png" width="100" align="right">
 
 The official TENOR logo should be used for the conference, but organizers are free (and encouraged) to decline its colors or other details (please submit a proposal to the steering committee before to make it public).
 
